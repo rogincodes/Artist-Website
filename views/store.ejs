@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Mars | Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey = '<%= stripePublicKey %>'
+    </script>
+    <script src="store.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <h1 class="artist-name">Bruno Mars</h1>
+        <nav class="nav main-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="store" class="active">STORE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop">
+            <% items.music.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image" src="images/<%= item.imgName %>" alt="<%= item.imgAlt %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₱<%= item.price /100 %></span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop">
+            <% items.merch.forEach(function(item){ %>
+                <div class="shop-item" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title"><%= item.name %></span>
+                    <img class="shop-item-image" src="images/<%= item.imgName %>" alt="<%= item.imgAlt %>">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">₱<%= item.price /100 %></span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+    
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</strong>
+        </div>
+        <div class="cart">
+            
+        </div>
+        <div class="cart-total">
+            <span class="cart-total-title">Total</span>
+            <span class="cart-total-price">₱0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" role="button">PURCHASE  </button>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="artist-name artist-name-footer">Bruno Mars</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.facebook.com/brunomars/" target="_blank">                
+                        <img src="images/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/brunomars/" target="_blank">                
+                        <img src="images/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/BRUNOMARS" target="_blank">                
+                        <img src="images/twitter.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@brunomars" target="_blank">
+                        <img src="images/youtube.png" alt="Youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C" target="_blank">
+                        <img src="images/spotify.png" alt="Spotify">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+{
+    "music": [
+        {
+            "id": 1,
+            "name": "An Evening with Silk Sonic",
+            "price": 184076,
+            "imgName": "An Evening with Silk Sonic.png",
+            "imgAlt": "An Evening with Silk Sonic"
+        },
+        {
+            "id": 2,
+            "name": "24K Magic",
+            "price": 140324,
+            "imgName": "24K Magic.png",
+            "imgAlt": "24K Magic"
+        },
+        {
+            "id": 3,
+            "name": "Unorthodox Jukebox",
+            "price": 70664,
+            "imgName": "Unorthodox Jukebox.png",
+            "imgAlt": "Unorthodox Jukebox"
+        },
+        {
+            "id": 4,
+            "name": "Doo-Wops & Hooligans",
+            "price": 60555,
+            "imgName": "Doo-Wops & Hooligans.png",
+            "imgAlt": "Doo-Wops & Hooligans"
+        }
+    ],
+
+    "merch": [
+        {
+            "id": 5,
+            "name": "Bootleg Tee",
+            "price": 400000,
+            "imgName": "Bootleg Tee.png",
+            "imgAlt": "Bootleg Tee"
+        },
+        {
+            "id": 6,
+            "name": "Coffeee Mug",
+            "price": 89811,
+            "imgName": "Coffee Mug.png",
+            "imgAlt": "Coffee Mug"
+        }
+    ]
+}
