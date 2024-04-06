@@ -10,6 +10,8 @@ const app = express();
 const fs = require('fs');
 const stripe = require('stripe')(stripeSecretKey)
 
+const port = 5000;
+
 app.set('view engine', 'ejs');
 app.use(express.json())
 app.use(express.static('public'));
@@ -57,4 +59,4 @@ app.post('/purchase', function(req, res) {
     })
 })
 
-app.listen(3000);
+app.listen(process.env.PORT || port, () => console.log('Listening to port $(port)'));
