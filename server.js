@@ -59,4 +59,4 @@ app.post('/purchase', function(req, res) {
     })
 })
 
-app.listen(process.env.PORT || port, () => console.log('Listening to port $(port)'));
+app.listen(process.env.PORT || port);
