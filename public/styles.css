@@ -186,7 +186,7 @@ html, body {
 .tour-date {
     color: #555;
     font-weight: bold;
-    width: 16%;
+    width: 12%;
 }
 
 .tour-city {
@@ -198,7 +198,7 @@ html, body {
 }
 
 .tour-btn {
-    max-width: 19%;
+    max-width: 23%;
 }
 
 .btn-primary {
