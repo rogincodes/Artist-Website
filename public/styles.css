@@ -229,6 +229,7 @@ html, body {
 
 .shop-item-image {
     height: 300px;
+    width: 300px;
 }
 
 .shop-item-details {
