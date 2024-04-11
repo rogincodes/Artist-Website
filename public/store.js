@@ -59,9 +59,9 @@ var stripeHandler = StripeCheckout.configure({
         }).then(function(data) {
             alert(data.message)
             var cartItems = document.getElementsByClassName('cart')[0];
-             while (cartItems.hasChildNodes()) {
-             cartItems.removeChild(cartItems.firstChild);
-            }
+            while (cartItems.hasChildNodes()) {
+                cartItems.removeChild(cartItems.firstChild);
+            };
             updateCartTotal();
         }).catch(function(error) {
             console.error(error)
